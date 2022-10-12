@@ -1,0 +1,20 @@
+{% extends 'bootstrap/base.html' %}
+{% import 'bootstrap/wtf.html' as wtf%}
+{% block title %}Text to Morse code{% endblock %}
+
+{% block content %}
+<div class="container">
+
+    <h3>Text to Morse Code Converter</h3>
+
+    {{ wtf.quick_form(form) }}
+
+    <h5>Original String: {{string}}</h5>
+
+    <h5>Morse Code: {{converted_text}}</h5>
+</div>
+{% endblock %}
+
+
+
+
